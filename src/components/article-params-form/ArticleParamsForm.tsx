@@ -7,7 +7,7 @@ import { Select } from 'src/ui/select/Select';
 import { ArticleStateType, backgroundColors, contentWidthArr,
 		defaultArticleState, fontColors, fontFamilyOptions,
     	fontSizeOptions, OptionType,
-}  from 'src/constants/articleProps';
+} from 'src/constants/articleProps';
 import { RadioGroup } from 'src/ui/radio-group';
 import { Separator } from 'src/ui/separator';
 import { Text } from 'src/ui/text';
@@ -38,7 +38,7 @@ type RadioGroupProps = {
 };
 
 type SeparatorProps = Record<string, never>;
-
+// ------------------------------------------------------------------------------------
 export const ArticleParamsForm = ({ setArticleState }: ArticleParamsFormProps) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [formState, setFormState] = useState<ArticleStateType>(defaultArticleState);
